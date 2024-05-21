@@ -1,0 +1,152 @@
+.main-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0px, 1fr));
+    grid-gap: 10px;
+   
+
+}
+@media (max-width: 800px) {
+    .main-container {
+        grid-template-columns: 1fr; /* Switch to a single column when screen width is 400px or less */
+    }
+}
+.upload-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.audio-player-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    
+
+}
+.upload-inner-container{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+    /* margin: 30px 30px 30px 60px; */
+    
+}
+form {
+    height: 260px;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed rgb(158, 149, 201);
+    border-radius: 10px;
+
+}
+.uploaded-image{
+    height: 240px;
+    border-radius: 4px;
+    overflow: hidden;
+
+}
+.file-name-section{
+    width: 100%;
+    height: 40px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    background-color: rgb(235, 235, 235);
+    border-radius: 6px;
+
+}
+.file-name-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 12px;
+    align-items: center;
+}
+.file-name-container-rightbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+.delete-icon{
+    cursor: pointer;
+}
+.file-icon {
+    
+    color: #1475cf;
+
+}
+.button-convert-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+}
+.button-convert {
+    width: 100%;
+    margin: 16px 0px;
+}
+.error-message{
+    font-size: 14px;
+    color: rgb(220, 25, 25);
+    width: 100%;
+}
+.music-style-selection-section {
+    width: 100%;
+    padding: 6px 0px 12px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-items: left;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.music-style-selection-section p {
+    width: inherit;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+}
+.music-selection-btn {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(27, 27, 27);
+    width: 100%;
+    white-space: nowrap;
+    height: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 4px;
+    background-color: rgb(205, 255, 233);
+    outline: none;
+}
+.music-selection-btn:hover {
+  background-color: rgb(132, 255, 214);
+  outline: none;
+}
+.music-selection-btn:active{
+    background-color: rgb(43, 160, 121); /* Darker green background when pressed */
+    
+}
+.music-selection-btn-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Adjusts columns based on container width */
+    grid-gap: 10px;
+
+}
+.music-selection-btn.active {
+    outline: none;
+    background-color: rgb(68, 255, 193); /* Darker green background when pressed */
+}
